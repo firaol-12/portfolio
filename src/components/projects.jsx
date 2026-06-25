@@ -24,7 +24,9 @@ export default function Project() {
         </p>
       </div>
 
-      {/* Tab buttons */}
+      {/* Tab buttons */}          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quia dicta cum tenetur illo expedita commodi atque iusto 
+          eius cupiditate
       <div className="w-50 md:w-80 h-10 mb-8 md:m-10 bg-gray-200 rounded-4xl flex justify-around items-center">
         {tabs.map((tab) => (
           <button
