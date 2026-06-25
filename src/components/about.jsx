@@ -22,7 +22,7 @@ export default function About(){
             </div>
 
             <div className="w-full md:h-70 flex flex-col gap-5 md:gap-0 md:flex-row justify-center md:justify-between items-center">
-                <div className="w-80 md:w-100 h-80 md:h-70 p-5 bg-amber-300 rounded-3xl flex flex-col justify-around items-center">
+                <div className="w-80 md:w-140 h-80 md:h-70 p-5 bg-amber-300 rounded-3xl flex flex-col justify-around items-center">
                     <div className="w-20 h-20">
                         <img className="w-full h-full object-cover" src={img1} alt="" />
                     </div>
@@ -38,7 +38,7 @@ export default function About(){
                     </div>
                 </div>
 
-                <div className="w-80 md:w-100 h-80 md:h-70 p-5 bg-amber-300 rounded-3xl flex flex-col justify-around items-center">
+                <div className="w-80 md:w-140 h-80 md:h-70 p-5 bg-amber-300 rounded-3xl flex flex-col justify-around items-center">
                     <div className="w-20 h-20">
                         <img className="w-full h-full object-cover" src={img2} alt="" />
                     </div>
@@ -53,7 +53,7 @@ export default function About(){
                         </p>
                     </div>     
                 </div>
-
+{/* 
                 <div className="w-80 md:w-100 h-80 md:h-70 p-5 bg-amber-300 rounded-3xl flex flex-col justify-around items-center">
                     <div className="w-20 h-20">
                         <img className="w-full h-full object-cover" src={img3} alt="" />
@@ -68,7 +68,7 @@ export default function About(){
                             quidem
                         </p>
                     </div>     
-                </div>
+                </div> */}
 
             </div>
         </div>

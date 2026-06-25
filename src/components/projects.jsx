@@ -6,12 +6,12 @@ import Automation from "./Automation";
 export default function Project() {
   const [activeTab, setActiveTab] = useState("Website");
 
-  const tabs = ["Website", "WebAR", "Automation"];
+  const tabs = ["Website", "WebAR"];
 
   const renderComponent = () => {
     if (activeTab === "Website") return <Website />;
     if (activeTab === "WebAR") return <WebAR />;
-    if (activeTab === "Automation") return <Automation />;
+    // if (activeTab === "Automation") return <Automation />;
   };
 
   return (
@@ -19,14 +19,13 @@ export default function Project() {
       <div className="md:h-15 flex justify-center items-center flex-col pb-5 md:pb-10">
         <h1 className="text-3xl text-center pb-5 md:pb-0">My Projects</h1>
         <p className="text-center w-full md:w-140">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Quia dicta cum tenetur illo expedita commodi atque iusto 
-          eius cupiditate
+          Helping businesses stand out with fast, beautiful websites and 
+          interactive WebAR expriences that captivate audiences
         </p>
       </div>
 
       {/* Tab buttons */}
-      <div className="w-80 md:w-100 h-10 mb-8 md:m-10 bg-gray-200 rounded-4xl flex justify-around items-center">
+      <div className="w-50 md:w-80 h-10 mb-8 md:m-10 bg-gray-200 rounded-4xl flex justify-around items-center">
         {tabs.map((tab) => (
           <button
             key={tab}
