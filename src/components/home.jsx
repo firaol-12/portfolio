@@ -13,8 +13,8 @@ export default function Home() {
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         {/* Left quote section */}
-        <div className="hidden md:flex justify-center flex-col  md:w-1/4 md:h-60 flex-col relative top-25 ml-15 mt-10">
-          <h1 className="text-9xl">"</h1>
+        <div className="hidden md:flex justify-center flex-col gap-5  md:w-1/4 md:h-60 relative top-15 ml-15 mt-10">
+          <h1 className="text-9xl">,,</h1>
           <h3 className="text-left">
             I specialize in Web Development and WebAR, creating responsive 
             websites and browser-based augmented reality experiences that 
