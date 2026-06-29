@@ -15,7 +15,7 @@ export default function Footer(){
                 <div className="flex flex-col pl-5">
                     <a className="flex items-center gap-3" href="tel:+1234567890"><FaPhone /> +251942090003</a>
                     <a className="flex items-center gap-3" href="mailto:feranegash604@gmail.com"><FaEnvelope /> feranegash604@gmail.com</a>
-                    <a className="flex items-center gap-3" href="https://maps.app.goo.gl/jPTr3nNViHzc4j4K9"><FaMapMarkerAlt />Ethiopia, Jimma</a>
+                    <div className="flex items-center gap-3"><FaMapMarkerAlt />Ethiopia, Jimma</div>
                 </div>
             </div>
 
