@@ -18,8 +18,8 @@ export default function Navbar() {
 
         {/* LEFT LINKS */}
         <div className="hidden md:flex items-center gap-15">
-          <a href="#home" className="text-amber-50 hover:text-amber-400 transition-colors">Home</a>
-          <a href="#about" className="text-amber-50 hover:text-amber-400 transition-colors">About</a>
+          <a href="#home" className="text-amber-50 hover:text-amber-300 transition-colors">Home</a>
+          <a href="#about" className="text-amber-50 hover:text-amber-300 transition-colors">Service</a>
         </div>
 
         {/* LOGO */}
@@ -29,8 +29,8 @@ export default function Navbar() {
 
         {/* RIGHT LINKS */}
         <div className="hidden md:flex items-center gap-15">
-          <a href="#projects" className="text-amber-50 hover:text-amber-400 transition-colors">Projects</a>
-          <a href="#tools" className="text-amber-50 hover:text-amber-400 transition-colors">Tools</a>
+          <a href="#projects" className="text-amber-50 hover:text-amber-300 transition-colors">Projects</a>
+          <a href="#tools" className="text-amber-50 hover:text-amber-300 transition-colors">Tools</a>
         </div>
 
         {/* HAMBURGER */}

@@ -14,8 +14,8 @@ export default function Footer(){
                 </div>
                 <div className="flex flex-col pl-5">
                     <a className="flex items-center gap-3" href="tel:+1234567890"><FaPhone /> +251942090003</a>
-                    <a className="flex items-center gap-3" href="mailto:you@example.com"><FaEnvelope /> feranegash604@gmail.com</a>
-                    <a className="flex items-center gap-3" href="https://maps.google.com/?q=123+Main+St"><FaMapMarkerAlt />Ethiopia, Adama</a>
+                    <a className="flex items-center gap-3" href="mailto:feranegash604@gmail.com"><FaEnvelope /> feranegash604@gmail.com</a>
+                    <a className="flex items-center gap-3" href="https://maps.app.goo.gl/jPTr3nNViHzc4j4K9"><FaMapMarkerAlt />Ethiopia, Jimma</a>
                 </div>
             </div>
 
@@ -24,10 +24,10 @@ export default function Footer(){
                     <h1 className="text-2xl mb-3">Pages</h1>
                 </div>
                 <div className="flex flex-col pl-5">
-                    <a href="">Home</a>
-                    <a href="">Survices</a>
-                    <a href="">Skills</a>
-                    <a href="">Projects</a>
+                    <a href="#home" className="text-amber-50 hover:text-amber-300 transition-colors">Home</a>
+                    <a href="#about" className="text-amber-50 hover:text-amber-300 transition-colors">About</a>
+                    <a href="#projects" className="text-amber-50 hover:text-amber-300 transition-colors">Projects</a>
+                    <a href="#tools" className="text-amber-50 hover:text-amber-300 transition-colors">Tools</a>
                 </div>
             </div>
             

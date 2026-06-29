@@ -137,10 +137,8 @@ const ProfileSkills = () => {
               <div className="w-full flex flex-col justify-center items-center mb-5 md:mb-0">
                 <div className="h-full text-black flex flex-col gap-5 justify-center items-center">
                     <h2 className="text-3xl text-black"><span className="text-amber-300 text-3xl">Development Skills</span></h2>
-                    <p className="text-center w-80 md:w-140">first
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Quia dicta cum tenetur illo expedita commodi atque iusto 
-                      eius cupiditate
+                    <p className="text-center w-80 md:w-140">
+                      Technologies and tools I use to build modern, high-quality web applications.
                   </p>
                 </div>
             </div>

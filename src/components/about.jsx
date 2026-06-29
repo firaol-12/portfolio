@@ -14,9 +14,8 @@ export default function About(){
 
                 <div className="w-80  text-center md:text-start md:w-140 h-full text-white flex justify-center md:justify-start items-center pb-2 pl-2">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Helping businesses stand out with fast, beautiful websites and 
+                        interactive WebAR expriences that captivate audiences
                     </p>
                 </div>
             </div>
@@ -31,9 +30,7 @@ export default function About(){
                     </div>
                     <div>
                         <p className="text-center ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Animi similique, aspernatur provident voluptates odio ex, 
-                            quidem
+                            Turning your vision into a professional online presence with responsive, high performance websites tailored to your goals.
                         </p>
                     </div>
                 </div>
@@ -47,9 +44,9 @@ export default function About(){
                     </div>
                     <div>
                         <p className="text-center ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Animi similique, aspernatur provident voluptates odio ex, 
-                            quidem
+                            Creating memorable customer experiences with browser 
+                            based augmented reality, allowing users to view, 
+                            explore, and interact with digital content in the real world 
                         </p>
                     </div>     
                 </div>

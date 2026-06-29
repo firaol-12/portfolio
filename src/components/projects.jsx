@@ -16,17 +16,15 @@ export default function Project() {
 
   return (
     <div className="flex w-full justify-center items-center flex-col p-10 md:p-5 md:mb-8">
-      <div className="md:h-15 flex justify-center items-center flex-col pb-5 md:pb-10">
-        <h1 className="text-3xl text-center pb-5 md:pb-0">My Projects</h1>
+      <div className="md:h-15 flex justify-center items-center flex-col pb-5 md:pb-10 gap-5">
+        <h1 className="text-amber-300 text-3xl text-center pb-5 md:pb-0">My Projects</h1>
         <p className="text-center w-full md:w-140">
-          Helping businesses stand out with fast, beautiful websites and 
-          interactive WebAR expriences that captivate audiences
+          Projects that showcase my ability to build responsive websites and 
+          interactive WebAR experiences for real-world use.
         </p>
       </div>
 
-      {/* Tab buttons */}          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Quia dicta cum tenetur illo expedita commodi atque iusto 
-          eius cupiditate
+      {/* Tab buttons */}
       <div className="w-50 md:w-80 h-10 mb-8 md:m-10 bg-gray-200 rounded-4xl flex justify-around items-center">
         {tabs.map((tab) => (
           <button

@@ -21,7 +21,7 @@ export default function Website (){
             <div className="w-70 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
                 <img src={img2} alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
                     <div className="flex h-20 w-full justify-center items-center">
-                    <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 ">View more</button>
+                    <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://youtu.be/I9LpE_u1l2Y">View more</a></button>
                 </div>
             </div>
         </div>

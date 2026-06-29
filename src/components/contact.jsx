@@ -6,11 +6,9 @@ export default function Contact(){
     return(
         <div className="flex flex-col justify-center items-center w-full gap-5 md:gap-10 mt-5 mb-5 pt-10">
             <div>                
-                <h1 className="text-3xl text-center m-3" >Contact Me</h1>
-                <p className="text-center w-80 md:w-140">first
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quia dicta cum tenetur illo expedita commodi atque iusto 
-                    eius cupiditate
+                <h1 className="text-amber-300 text-3xl text-center m-3" >Contact Me</h1>
+                <p className="text-center w-80 md:w-140">
+                    Have a project in mind or want to work together? I'd love to hear from you.
                 </p>
             </div>
 

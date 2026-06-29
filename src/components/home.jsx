@@ -13,12 +13,12 @@ export default function Home() {
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         {/* Left quote section */}
-        <div className="hidden md:flex md:w-1/4 md:h-60 flex-col relative top-25 ml-15 mt-10">
+        <div className="hidden md:flex justify-center flex-col  md:w-1/4 md:h-60 flex-col relative top-25 ml-15 mt-10">
           <h1 className="text-9xl">"</h1>
           <h3 className="text-left">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Ipsum doloribus reiciendis, necessitatibus aut architecto
-            accusamus quas
+            I specialize in Web Development and WebAR, creating responsive 
+            websites and browser-based augmented reality experiences that 
+            are fast, engaging, and accessible across devices.
           </h3>
         </div>
 
@@ -51,23 +51,21 @@ export default function Home() {
               Contact me
             </a>
             <a
-              href="https://www.upwork.com/freelancers/~01d21802b5a93052ce"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setActiveBtn("hire")}
+              href="#projects"
+              onClick={() => setActiveBtn("projects")}
               className={`rounded-full w-40 h-13 text-sm md:text-center flex justify-center items-center transition-colors
-                ${activeBtn === "hire" ? "bg-amber-300 text-amber-50" : "bg-transparent text-black"}`}
+                ${activeBtn === "projects" ? "bg-amber-300 text-amber-50" : "bg-transparent text-black"}`}
             >
-              Hire me
+              View Project
             </a>
           </div>
         </div>
 
         {/* Right experience section */}
         <div className="hidden md:flex md:w-60 md:h-40 relative top-25 pl-10 mr-15 flex-col justify-center items-end border-b-8">
-          <img className="h-10 w-30 object-cover" src={star} alt="" />
-          <h1 className="text-4xl">4 Years</h1>
-          <h1 className="text-2xl">exprience</h1>
+          <img className="h-12 w-30 object-cover" src={star} alt="" />
+          <h1 className="text-4xl">3 Years</h1>
+          <h1 className="text-2xl"> of exprience</h1>
         </div>
       </div>
     </div>
