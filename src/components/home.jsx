@@ -37,7 +37,7 @@ export default function Home() {
 
           {/* Profile image */}
           <div className="w-full md:max-w-none md:w-150 absolute bottom-0 h-130 md:h-115 flex justify-center items-center">
-            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782811221/profile2_1_mydhhu.png" alt="" />
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_800,dpr_auto/v1782811221/profile2_1_mydhhu.png" alt="" />
           </div>
 
           {/* Buttons */}
