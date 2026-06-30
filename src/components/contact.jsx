@@ -63,7 +63,7 @@ export default function Contact() {
                         <input className="border-gray-400 border rounded-2xl w-80 md:w-120 p-3" name="Name" required type="text" placeholder="Name"></input>
                         <input className="border-gray-400 border rounded-2xl w-80 md:w-120 p-3" name="Email" required type="email" placeholder="Email"></input>
                         <textarea className="border-gray-400 border rounded-2xl w-80 md:w-120 p-3 h-55" name="Message" required  type="text" placeholder="Message"></textarea>
-                        <button type="submit" className="rounded-2xl w-80 md:w-120 p-3 bg-amber-300 text-white" disabled={status === "sending"}>
+                        <button type="submit" className="cursor-pointer rounded-2xl  w-80 md:w-120 p-3 bg-amber-300 text-white" disabled={status === "sending"}>
                             {status === "sending" ? "Sending..." : "Send Message"}
                         </button>
                     </form>

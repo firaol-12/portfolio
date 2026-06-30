@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import bg from "../assets/aw.avif"
-import profile from "../assets/profile2 (1).png"
-import star from "../assets/—Pngtree—5 star rating game_21024554.png"
+// import bg from "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto/v1782811202/aw_fgspka.avif"
+// import profile from "https://res.cloudinary.com/djw0srhou/image/upload/v1782811221/profile2_1_mydhhu.png"
+// import star from "https://res.cloudinary.com/djw0srhou/image/upload/v1782811277/Pngtree_5_star_rating_game_21024554_pmfx56.png"
 
 export default function Home() {
   const [activeBtn, setActiveBtn] = useState("contact");
@@ -10,7 +10,7 @@ export default function Home() {
     <div className="m-0 p-0">
       <div
         className="flex flex-col md:flex-row justify-center items-center w-full h-screen m-0 p-0 md:pl-20 md:pr-20 md:px-20"
-        style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        // style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         {/* Left quote section */}
         <div className="hidden md:flex justify-center flex-col gap-5  md:w-1/4 md:h-60 relative top-15 ml-15 mt-10">
@@ -37,7 +37,7 @@ export default function Home() {
 
           {/* Profile image */}
           <div className="w-full md:max-w-none md:w-150 absolute bottom-0 h-130 md:h-115 flex justify-center items-center">
-            <img className="w-full h-full object-cover" src={profile} alt="" />
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782811221/profile2_1_mydhhu.png" alt="" />
           </div>
 
           {/* Buttons */}
@@ -63,7 +63,7 @@ export default function Home() {
 
         {/* Right experience section */}
         <div className="hidden md:flex md:w-60 md:h-40 relative top-25 pl-10 mr-15 flex-col justify-center items-end border-b-8">
-          <img className="h-12 w-30 object-cover" src={star} alt="" />
+          <img className="h-12 w-30 object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782811277/Pngtree_5_star_rating_game_21024554_pmfx56.png" alt="" />
           <h1 className="text-4xl">3 Years</h1>
           <h1 className="text-2xl"> of exprience</h1>
         </div>

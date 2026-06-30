@@ -1,9 +1,9 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import img1 from "../assets/icons/instagram (1).png"
-import img2 from "../assets/icons/linkedin (1).png"
-import img3 from "../assets/icons/telegram (1).png"
-import img4 from "../assets/icons/whatsapp (1).png"
+import img1 from "../assets/icons/instagram (2).png"
+import img2 from "../assets/icons/linkedin (2).png"
+import img3 from "../assets/icons/telegram (2).png"
+import img4 from "../assets/icons/whatsapp (3).png"
 
 export default function Footer(){
     return(
@@ -43,18 +43,42 @@ export default function Footer(){
                     </p>
                 </div>
                 <div className="flex jestify-center items-center gap-4 pl-5">
-                    <button className="flex justify-center items-center rounded-full  w-12 h-12 bg-amber-50">
-                        <img className="w-10 h-10 " src={img1} alt="" />
-                    </button>
-                    <button className="flex justify-center items-center rounded-full  w-12 h-12 bg-amber-50">
-                        <img className="w-10 h-10 " src={img2} alt="" />
-                    </button>
-                    <button className="flex justify-center items-center rounded-full  w-12 h-12 bg-amber-50">
-                        <img className="w-10 h-10 " src={img3} alt="" />
-                    </button>
-                    <button className="flex justify-center items-center rounded-full  w-12 h-12 bg-amber-50">
-                        <img className="w-10 h-10 " src={img4} alt="" />
-                    </button>
+                    <a
+                        href="https://www.instagram.com/firaol_112"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex justify-center items-center rounded-full w-10 h-10 bg-amber-50"
+                    >
+                        <img className="w-10 h-10" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782810878/instagram_2_curinv.png" alt="Instagram" />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/f112?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex justify-center items-center rounded-full w-10 h-10 bg-amber-50"
+                    >
+                        <img className="w-10 h-10" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782810878/linkedin_2_oysioo.png" alt="Linkedin" />
+                    </a>
+
+                    <a
+                        href="https://t.me/firaol_112"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex justify-center items-center rounded-full w-10 h-10 bg-amber-50"
+                    >
+                        <img className="w-10 h-10" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782810878/telegram_2_aqeajj.png" alt="Telegram" />
+                    </a>
+
+                    <a
+                        href="https://wa.me/251942090003"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex justify-center items-center rounded-full w-10 h-10 bg-amber-50"
+                    >
+                        <img className="w-10 h-10" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782810890/whatsapp_3_af1akr.png" alt="Whats App" />
+                    </a>
+                    
                 </div>
             </div>
         </div>

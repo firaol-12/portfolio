@@ -58,7 +58,7 @@ const ProfileSkills = () => {
     { 
       icon: FaReact, 
       label: 'React', 
-      percentage: 92 
+      percentage: 90 
     },
 
     { 
@@ -69,7 +69,7 @@ const ProfileSkills = () => {
     { 
       icon: SiHtml5, 
       label: 'HTML5', 
-      percentage: 85 
+      percentage: 95 
     },
     { 
       icon: SiTailwindcss, 
@@ -93,33 +93,33 @@ const ProfileSkills = () => {
     { 
       icon: SiCss, 
       label: 'CSS3', 
-      percentage: 92 
+      percentage: 90 
     },
 
     { 
       icon: SiJavascript, 
       label: 'Javascript', 
-      percentage: 88 
+      percentage: 90 
     },
     { 
       icon: SiThreedotjs, 
       label: 'Three', 
-      percentage: 85 
+      percentage: 65 
     },
     { 
       icon: SiNextdotjs, 
       label: 'Next', 
-      percentage: 90 
+      percentage: 60 
     },
     { 
       icon: SiTypescript, 
       label: 'Typescript', 
-      percentage: 83 
+      percentage: 70 
     },
     { 
       icon: SiMysql, 
       label: 'MySql', 
-      percentage: 87 
+      percentage: 80 
     },
   ];
 

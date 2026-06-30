@@ -1,7 +1,5 @@
 import React from "react";
-import img1 from "../assets/code.png"
-import img2 from "../assets/ar.png"
-import img3 from "../assets/icons/automation (1).png"
+
 
 
 export default function About(){
@@ -23,7 +21,7 @@ export default function About(){
             <div className="w-full md:h-70 flex flex-col gap-5 md:gap-0 md:flex-row justify-center md:justify-between items-center">
                 <div className="w-80 md:w-140 h-80 md:h-70 p-5 bg-amber-300 rounded-3xl flex flex-col justify-around items-center">
                     <div className="w-20 h-20">
-                        <img className="w-full h-full object-cover" src={img1} alt="" />
+                        <img className="w-full h-full object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782811840/code_w8wjk7.png" alt="" />
                     </div>
                     <div>
                         <h3 className="text-2xl text-center ">Website Development</h3>
@@ -37,7 +35,7 @@ export default function About(){
 
                 <div className="w-80 md:w-140 h-80 md:h-70 p-5 bg-amber-300 rounded-3xl flex flex-col justify-around items-center">
                     <div className="w-20 h-20">
-                        <img className="w-full h-full object-cover" src={img2} alt="" />
+                        <img className="w-full h-full object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782811845/ar_zikurm.png" alt="" />
                     </div>
                     <div>
                         <h3 className="text-2xl text-center">Web Based Augmented Reality</h3>

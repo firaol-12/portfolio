@@ -30,7 +30,7 @@ export default function Project() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`rounded-4xl py-2 md:py-0 md:pt-2 md:pb-2 md:pl-8 md:pr-8 w-26 md:w-40 transition-colors
+            className={`cursor-pointer rounded-4xl py-2 md:py-0 md:pt-2 md:pb-2 md:pl-8 md:pr-8 w-26 md:w-40 transition-colors
               ${activeTab === tab
                 ? "bg-amber-300 text-white"
                 : "bg-transparent text-black"
