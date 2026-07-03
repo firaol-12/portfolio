@@ -29,13 +29,13 @@ export default function About(){
 
       tl.from(left.current, {
           opacity: 0,
-          x: -100,
+          x: -50,
           scale: 0.8,
           duration: 0.8,
         })
        .from(right.current, {
           opacity: 0,
-          x: 100,
+          x: 50,
           scale: 0.8,
           duration: 0.8,
         }, '<')

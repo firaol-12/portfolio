@@ -40,15 +40,15 @@ export default function Contact() {
         }, '<')
         .from(left.current, {
           opacity: 0,
-          x: 100,
+          x: 40,
           scale: 0.8,
-          duration: 0.6,
+          duration:1.0,
         }, '<') // starts 0.4s before the previous one ends
         .from(right.current, {
           opacity: 0,
-          x: -100,
+          x: -40,
           scale: 0.8,
-          duration: 0.6,
+          duration: 1.0,
         }, '<')
     }, { scope: container });
 

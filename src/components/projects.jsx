@@ -27,13 +27,13 @@ const container = useRef(null);
 
       tl.from(topText.current, {
           opacity: 0,
-          x: -100,
+          x: -50,
           scale: 0.8,
           duration: 0.8,
         })
        .from(bottomText.current, {
           opacity: 0,
-          x: 100,
+          x: 50,
           scale: 0.8,
           duration: 0.8,
         }, '<')

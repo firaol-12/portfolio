@@ -33,12 +33,12 @@ export default function Website (){
           opacity: 0,
           scale: 0.8,
           duration: 0.8,
-        }, '<')
+        },)
         .from(box3.current, {
           opacity: 0,
           scale: 0.8,
           duration: 0.6,
-        }, '<') // starts 0.4s before the previous one ends
+        },) // starts 0.4s before the previous one ends
     }, { scope: container });
     return(
         <div ref={container} className="md:w-5/6 flex flex-col md:flex-row justify-center gap-12 md:gap-0 md:justify-around items-center ">
