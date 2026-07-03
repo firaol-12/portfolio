@@ -1,10 +1,43 @@
-import React, { useState } from "react";
+import { useRef, useState } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import Website from "./webComponent";
 import WebAR from "./WebAR";
 import Automation from "./Automation";
 
+gsap.registerPlugin(ScrollTrigger);
+
+
 export default function Project() {
   const [activeTab, setActiveTab] = useState("Website");
+const container = useRef(null);
+    const topText = useRef(null);
+    const bottomText = useRef(null);
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      defaults: { ease: 'power2.out' },
+      scrollTrigger: {
+        trigger: container.current, // watch this element
+        start: 'top 80%',           // when top of container hits 80% down the viewport
+        // markers: true,           // 👈 uncomment while testing, shows debug lines
+      },
+    });
+
+      tl.from(topText.current, {
+          opacity: 0,
+          x: -100,
+          scale: 0.8,
+          duration: 0.8,
+        })
+       .from(bottomText.current, {
+          opacity: 0,
+          x: 100,
+          scale: 0.8,
+          duration: 0.8,
+        }, '<')
+    }, { scope: container });
 
   const tabs = ["Website", "WebAR"];
 
@@ -15,10 +48,10 @@ export default function Project() {
   };
 
   return (
-    <div className="flex w-full justify-center items-center flex-col p-10 md:p-5 md:mb-8">
+    <div ref={container} className="flex w-full justify-center items-center flex-col p-10 md:p-5 md:mb-8">
       <div className="md:h-15 flex justify-center items-center flex-col pb-5 md:pb-10 gap-5">
-        <h1 className="text-amber-300 text-3xl text-center pb-5 md:pb-0">My Projects</h1>
-        <p className="text-center w-full md:w-140">
+        <h1 ref={topText} className="text-amber-300 text-3xl text-center pb-5 md:pb-0">My Projects</h1>
+        <p ref={bottomText} className="text-center w-full md:w-140">
           Projects that showcase my ability to build responsive websites and 
           interactive WebAR experiences for real-world use.
         </p>

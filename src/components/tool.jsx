@@ -1,4 +1,13 @@
 import React from 'react';
+
+import { useRef, useState } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 import { 
   FaCode, 
   FaBolt, 
@@ -54,6 +63,40 @@ const SkillBar = ({ icon: Icon, label, percentage }) => {
 
 // Main Profile Component
 const ProfileSkills = () => {
+    const container = useRef(null);
+    const topText = useRef(null);
+    const bottomText = useRef(null);
+    const box = useRef(null);
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      defaults: { ease: 'power2.out' },
+      scrollTrigger: {
+        trigger: container.current, // watch this element
+        start: 'top 80%',           // when top of container hits 80% down the viewport
+                  // 👈 uncomment while testing, shows debug lines
+      },
+    });
+
+      tl.from(topText.current, {
+          opacity: 0,
+          y: 100,
+          scale: 0.8,
+          duration: 0.8,
+        })
+       .from(bottomText.current, {
+          opacity: 0,
+          
+          scale: 0.8,
+          duration: 0.8,
+        },'-=0.4')
+        .from(box.current, {
+          opacity: 0,
+          scale:1,
+          duration: 0.6,
+        }, '<') 
+    }, { scope: container });
+
   const skills = [
     { 
       icon: FaReact, 
@@ -124,7 +167,7 @@ const ProfileSkills = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-around p-5 bg-white">
+    <div ref={container} className="min-h-screen flex flex-col items-center justify-around p-5 bg-white">
       {/* Add keyframes for animation */}
       <style>{`
         @keyframes fillBar {
@@ -136,8 +179,8 @@ const ProfileSkills = () => {
 
               <div className="w-full flex flex-col justify-center items-center mb-5 md:mb-0">
                 <div className="h-full text-black flex flex-col gap-5 justify-center items-center">
-                    <h2 className="text-3xl text-black"><span className="text-amber-300 text-3xl">Development Skills</span></h2>
-                    <p className="text-center w-80 md:w-140">
+                    <h2 ref={topText} className="text-3xl text-black"><span className="text-amber-300 text-3xl">Development Skills</span></h2>
+                    <p ref={bottomText} className="text-center w-80 md:w-140">
                       Technologies and tools I use to build modern, high-quality web applications.
                   </p>
                 </div>

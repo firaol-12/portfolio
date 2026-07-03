@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import { useRef, useState } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+
 // import bg from "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto/v1782811202/aw_fgspka.avif"
 // import profile from "https://res.cloudinary.com/djw0srhou/image/upload/v1782811221/profile2_1_mydhhu.png"
 // import star from "https://res.cloudinary.com/djw0srhou/image/upload/v1782811277/Pngtree_5_star_rating_game_21024554_pmfx56.png"
@@ -6,16 +9,55 @@ import React, { useState } from "react";
 export default function Home() {
   const [activeBtn, setActiveBtn] = useState("contact");
 
+    const container = useRef(null);
+    const left = useRef(null);
+    const topText = useRef(null);
+    const profileImg = useRef(null);
+    const button = useRef(null);
+    const right = useRef(null);
+
+    useGSAP(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power2.out' } });
+
+      tl.from(left.current, {
+          opacity: 0,
+          x: -100,
+          scale: 0.8,
+          duration: 0.8,
+        })
+       .from(right.current, {
+          opacity: 0,
+          x: 100,
+          scale: 0.8,
+          duration: 0.8,
+        }, '<')
+        .from(topText.current, {
+          opacity: 0,
+          y: 40,
+          duration: 0.6,
+        }, '-=0.4') // starts 0.4s before the previous one ends
+        .from(profileImg.current, {
+          opacity: 0,
+          y: 40,
+          duration: 0.6,
+        }, '-=0.4')
+        .from(button.current, {
+          opacity: 0,
+          scale: 0.8,
+          duration: 0.6,
+        }, '-=0.4')
+    }, { scope: container });
+
   return (
     <div className="m-0 p-0">
-      <div
+      <div ref={container}
         className="flex flex-col md:flex-row justify-center items-center w-full h-screen m-0 p-0 md:pl-20 md:pr-20 md:px-20"
         // style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         {/* Left quote section */}
-        <div className="hidden md:flex justify-center flex-col gap-5  md:w-1/4 md:h-60 relative top-15 ml-15 mt-10">
+        <div ref={left} className=" data-aos='fade-up' hidden md:flex justify-center flex-col gap-5  md:w-1/4 md:h-60 relative top-15 ml-15 mt-10">
           <h1 className="text-9xl">,,</h1>
-          <h3 className="text-left">
+          <h3 className="text-left " >
             I specialize in Web Development and WebAR, creating responsive 
             websites and browser-based augmented reality experiences that 
             are fast, engaging, and accessible across devices.
@@ -26,7 +68,7 @@ export default function Home() {
         <div className="w-full h-screen relative md:w-200 md:h-full flex flex-col justify-end items-center">
 
           {/* Name and title */}
-          <div className="absolute text-center top-20 md:top-35 w-full px-4">
+          <div ref={topText} className="absolute text-center top-20 md:top-35 w-full px-4">
             <h1 className="text-4xl md:text-6xl font-bold text-black z-10">
               I'm <span className="text-amber-400">Firaol,</span>
             </h1>
@@ -36,12 +78,12 @@ export default function Home() {
           </div>
 
           {/* Profile image */}
-          <div className="w-full md:max-w-none md:w-150 absolute bottom-0 h-130 md:h-115 flex justify-center items-center">
-            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_800,dpr_auto/v1782811221/profile2_1_mydhhu.png" alt="" />
+          <div ref={profileImg} className="   w-full md:max-w-none md:w-150 absolute bottom-0 h-130 md:h-115 flex justify-center items-center">
+            <img className="data-aos='fade-up'  w-full h-full object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_800,dpr_auto/v1782811221/profile2_1_mydhhu.png" alt="" />
           </div>
 
           {/* Buttons */}
-          <div className="absolute w-80 md:w-80 h-14 md:h-13 flex justify-center items-center bottom-4 bg-gray-200 rounded-full">
+          <div ref={button} className="absolute w-80 md:w-80 h-14 md:h-13 flex justify-center items-center bottom-4 bg-gray-200 rounded-full">
             <a
               href="#contact"
               onClick={() => setActiveBtn("contact")}
@@ -62,7 +104,7 @@ export default function Home() {
         </div>
 
         {/* Right experience section */}
-        <div className="hidden md:flex md:w-60 md:h-40 relative top-25 pl-10 mr-15 flex-col justify-center items-end border-b-8">
+        <div ref={right} className="hidden md:flex md:w-60 md:h-40 relative top-25 pl-10 mr-15 flex-col justify-center items-end border-b-8">
           <img className="h-12 w-30 object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782811277/Pngtree_5_star_rating_game_21024554_pmfx56.png" alt="" />
           <h1 className="text-4xl">3 Years</h1>
           <h1 className="text-2xl"> of exprience</h1>

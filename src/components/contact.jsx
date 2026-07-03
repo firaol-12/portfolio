@@ -1,9 +1,56 @@
-import React from "react";
+import { useRef, useState } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+gsap.registerPlugin(ScrollTrigger);
+
+
 export default function Contact() {
+
+    const container = useRef(null);
+    const topText = useRef(null);
+    const bottomText = useRef(null);
+    const right = useRef(null);
+    const left = useRef(null);
+
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      defaults: { ease: 'power2.out' },
+      scrollTrigger: {
+        trigger: container.current, // watch this element
+        start: 'top 80%',           // when top of container hits 80% down the viewport
+        // markers: true,           // 👈 uncomment while testing, shows debug lines
+      },
+    });
+
+      tl.from(topText.current, {
+          opacity: 0,
+          y:100,
+          scale: 0.8,
+          duration: 0.8,
+        })
+       .from(bottomText.current, {
+          opacity: 0,
+          scale: 0.8,
+          duration: 0.8,
+        }, '<')
+        .from(left.current, {
+          opacity: 0,
+          x: 100,
+          scale: 0.8,
+          duration: 0.6,
+        }, '<') // starts 0.4s before the previous one ends
+        .from(right.current, {
+          opacity: 0,
+          x: -100,
+          scale: 0.8,
+          duration: 0.6,
+        }, '<')
+    }, { scope: container });
 
     const form = useRef();
     const [status, setStatus] = useState("idle");
@@ -30,7 +77,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center w-full gap-5 md:gap-10 mt-5 mb-5 pt-10">
+        <div ref={container} className="flex flex-col justify-center items-center w-full gap-5 md:gap-10 mt-5 mb-5 pt-10">
 
             {/* Toast notification */}
             {toast && (
@@ -43,14 +90,14 @@ export default function Contact() {
             )}
 
             <div>
-                <h1 className="text-amber-300 text-3xl text-center m-3">Contact Me</h1>
-                <p className="text-center w-80 md:w-140">
+                <h1 ref={topText} className="text-amber-300 text-3xl text-center m-3">Contact Me</h1>
+                <p ref={bottomText} className="text-center w-80 md:w-140">
                     Have a project in mind or want to work together? I'd love to hear from you.
                 </p>
             </div>
 
             <div className="flex flex-col md:flex-row justify-center items-center w-4/5">
-                <div className="md:w-100 w-80">
+                <div ref={left} className="md:w-100 w-80">
                     <DotLottieReact
                         src="https://lottie.host/68ef7e1c-9742-4f9b-a354-d5f7786caab3/kLyRrTTRwZ.lottie"
                         loop
@@ -58,7 +105,7 @@ export default function Contact() {
                         className="md:w-100 md:h-100 w-80"
                     />
                 </div>
-                <div className="md:border-l-8 w-80 md:w-1/2 md:h-120 p-5">
+                <div ref={right} className="md:border-l-8 w-80 md:w-1/2 md:h-120 p-5">
                     <form ref={form} className="flex flex-col justify-center items-center gap-5" onSubmit={sendEmail}>
                         <input className="border-gray-400 border rounded-2xl w-80 md:w-120 p-3" name="Name" required type="text" placeholder="Name"></input>
                         <input className="border-gray-400 border rounded-2xl w-80 md:w-120 p-3" name="Email" required type="email" placeholder="Email"></input>
