@@ -1,9 +1,9 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import img1 from "../assets/icons/instagram (2).png"
-import img2 from "../assets/icons/linkedin (2).png"
-import img3 from "../assets/icons/telegram (2).png"
-import img4 from "../assets/icons/whatsapp (3).png"
+// import img1 from "../assets/icons/instagram (2).png"
+// import img2 from "../assets/icons/linkedin (2).png"
+// import img3 from "../assets/icons/telegram (2).png"
+// import img4 from "../assets/icons/whatsapp (3).png"
 
 export default function Footer(){
     return(

@@ -29,13 +29,13 @@ const container = useRef(null);
           opacity: 0,
           x: -50,
           scale: 0.8,
-          duration: 0.8,
+          duration: 1.0,
         })
        .from(bottomText.current, {
           opacity: 0,
           x: 50,
           scale: 0.8,
-          duration: 0.8,
+          duration: 1.0,
         }, '<')
     }, { scope: container });
 
@@ -49,7 +49,7 @@ const container = useRef(null);
 
   return (
     <div ref={container} className="flex w-full justify-center items-center flex-col p-10 md:p-5 md:mb-8">
-      <div className="md:h-15 flex justify-center items-center flex-col pb-5 md:pb-10 gap-5">
+      <div className="md:h-15 flex justify-center items-center flex-col pb-5 md:pb-10 gap-5 md:mt-20">
         <h1 ref={topText} className="text-amber-300 text-3xl text-center pb-5 md:pb-0">My Projects</h1>
         <p ref={bottomText} className="text-center w-full md:w-140">
           Projects that showcase my ability to build responsive websites and 

@@ -31,13 +31,13 @@ export default function About(){
           opacity: 0,
           x: -50,
           scale: 0.8,
-          duration: 0.8,
+          duration: 1.0,
         })
        .from(right.current, {
           opacity: 0,
           x: 50,
           scale: 0.8,
-          duration: 0.8,
+          duration: 1.0,
         }, '<')
         .from(line.current, {
           opacity: 0,

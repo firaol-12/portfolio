@@ -4,8 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
-// import img1 from "../assets/project/img2.png"
-// import img2 from "../assets/project/Home (3).png"
+import img1 from "../assets/pro1.png"
+import img2 from "../assets/pro2.png"
 // import img3 from "../assets/project/img1.png"
 
 export default function Website (){
@@ -41,22 +41,40 @@ export default function Website (){
         },) // starts 0.4s before the previous one ends
     }, { scope: container });
     return(
-        <div ref={container} className="md:w-5/6 flex flex-col md:flex-row justify-center gap-12 md:gap-0 md:justify-around items-center ">
-            <div ref={box1} className="w-70 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
+        <div ref={container} className="md:w-5/6 flex-wrap flex flex-col md:flex-row justify-center gap-12 md:gap-30 md:justify-center items-center ">
+            <div ref={box3} className="w-70 my-3 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
+                <img src="https://res.cloudinary.com/djw0srhou/image/upload/v1791556286/Dark_Blue_and_White_Futuristic_Geometric_Modern_Technology_Flyer_2_vxmipp.png" alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
+                <div className="flex h-30 w-full justify-center items-center flex-col gap-2">
+                    <h3>E-commerce Platform</h3>
+                    <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://youtu.be/I9LpE_u1l2Y">View more</a></button>
+                </div>
+            </div>
+            <div ref={box1} className="w-70  my-3 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
                 <img src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_400,dpr_auto/v1782811006/img2_dhke9m.png" alt="Project 1" className="object-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
-                <div className="flex h-20 w-full justify-center items-center">
+                <div className="flex h-30 w-full flex-col gap-2 justify-center items-center">
+                    <h3>Hotel Booking Website</h3>
                     <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40View more"><a href="https://effulgent-semolina-13e511.netlify.app/" target="_blank" rel="noopener noreferrer">View more</a></button>
                 </div>
             </div>
-            <div ref={box2} className="ww-70 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
+            <div ref={box2} className="w-70  my-3 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
                 <img src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_400,dpr_auto/v1782811001/img1_arjrz9.png" alt="Project 2" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
-                    <div className="flex h-20 w-full justify-center items-center">
+                <div className="flex h-30 w-full flex-col gap-2 justify-center items-center">
+                    <h3>Photography  Website </h3>
                     <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://bashaashaastudio.netlify.app/" target="_blank" rel="noopener noreferrer">View more</a></button>
                 </div>
             </div>
-            <div ref={box3} className="w-70 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
+            <div ref={box3} className="w-70  my-3 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
                 <img src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_400,dpr_auto/v1782810990/Home_3_bvvfbr.png" alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
-                    <div className="flex h-20 w-full justify-center items-center">
+                <div className="flex h-30 w-full flex-col gap-2 justify-center items-center">
+                    <h3>Blog Platform</h3>
+                    <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://youtu.be/I9LpE_u1l2Y">View more</a></button>
+                </div>
+            </div>
+
+            <div ref={box3} className="w-70   h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
+                <img src="https://res.cloudinary.com/djw0srhou/image/upload/v1791556281/AR_Floating_Elements_Flyer_b658oh.png" alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
+                <div className="flex h-30 w-full flex-col gap-2 justify-center items-center">
+                    <h3>To-Do App</h3>
                     <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://youtu.be/I9LpE_u1l2Y">View more</a></button>
                 </div>
             </div>
