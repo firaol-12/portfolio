@@ -32,8 +32,28 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiMysql,
-  SiTypescript
+  SiTypescript,
+  SiGreensock // 👈 GSAP logo
 } from 'react-icons/si';
+
+// 👈 Custom R3F icon (no official R3F icon exists in react-icons)
+const R3FIcon = ({ className }) => (
+  <svg
+    viewBox="0 0 24 24"
+    width="1em"
+    height="1em"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.6"
+    strokeLinejoin="round"
+    strokeLinecap="round"
+    className={className}
+  >
+    <path d="M12 3l7.5 4.5v9L12 21l-7.5-4.5v-9L12 3z" />
+    <path d="M12 12L4.5 7.5M12 12l7.5-4.5M12 12v9" />
+    <ellipse cx="12" cy="12" rx="11" ry="4" transform="rotate(-30 12 12)" />
+  </svg>
+);
 
 // SkillBar Component
 const SkillBar = ({ icon: Icon, label, percentage }) => {
@@ -122,12 +142,17 @@ const ProfileSkills = () => {
     { 
       icon: FaCodeBranch, 
       label: 'Git & Git hub', 
-      percentage: 83 
+      percentage: 91 
     },
     { 
       icon: SiPostgresql, 
       label: 'PostgreSQL', 
-      percentage: 87 
+      percentage: 95 
+    },
+    { // 👈 new skill
+      icon: SiGreensock, 
+      label: 'GSAP', 
+      percentage: 90
     },
   ];
 
@@ -147,21 +172,26 @@ const ProfileSkills = () => {
     { 
       icon: SiThreedotjs, 
       label: 'Three', 
-      percentage: 65 
+      percentage: 85 
     },
     { 
       icon: SiNextdotjs, 
       label: 'Next', 
-      percentage: 60 
+      percentage: 90 
     },
     { 
       icon: SiTypescript, 
       label: 'Typescript', 
-      percentage: 70 
+      percentage: 89 
     },
     { 
       icon: SiMysql, 
       label: 'MySql', 
+      percentage: 90 
+    },
+    { // 👈 new skill
+      icon: R3FIcon, 
+      label: 'R3F', 
       percentage: 80 
     },
   ];
