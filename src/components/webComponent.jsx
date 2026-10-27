@@ -43,7 +43,7 @@ export default function Website (){
     return(
         <div ref={container} className="md:w-5/6 flex-wrap flex flex-col md:flex-row justify-center gap-12 md:gap-30 md:justify-center items-center ">
             <div ref={box3} className="w-70 my-3 h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
-                <img src="https://res.cloudinary.com/djw0srhou/image/upload/v1791556286/Dark_Blue_and_White_Futuristic_Geometric_Modern_Technology_Flyer_2_vxmipp.png" alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
+                <img src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_400,dpr_auto/v1791556286/Dark_Blue_and_White_Futuristic_Geometric_Modern_Technology_Flyer_2_vxmipp.png" alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
                 <div className="flex h-30 w-full justify-center items-center flex-col gap-2">
                     <h3>E-commerce Platform</h3>
                     <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://frontend-ecommerce-gy35.vercel.app/" target="_blank" rel="noopener noreferrer">View more</a></button>
@@ -72,10 +72,10 @@ export default function Website (){
             </div>
 
             <div ref={box3} className="w-70   h-95 flex justify-between items-center flex-col rounded-2xl  shadow-2xl shadow-black/40 ">
-                <img src="https://res.cloudinary.com/djw0srhou/image/upload/v1791556281/AR_Floating_Elements_Flyer_b658oh.png" alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
+                <img src="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_400,dpr_auto/v1791556281/AR_Floating_Elements_Flyer_b658oh.png" alt="Project 3" className="bject-cover w-70 h-75 overflow-hidden rounded-t-2xl rounded-b-3xl" />
                 <div className="flex h-30 w-full flex-col gap-2 justify-center items-center">
                     <h3>To-Do App</h3>
-                    <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://yaayoo.vercel.app/" target="_blank" rel="noopener noreferrer">View more</a></button>
+                    <button className="rounded-4xl text-white bg-amber-300 pt-2 pb-2 pl-8 pr-8 w-40 "><a href="https://yaayoo.vercel.app/" target="_blank" rel="noopener noreferrer"g>View more</a></button>
                 </div>
             </div>
         </div>
