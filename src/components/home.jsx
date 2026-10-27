@@ -1,6 +1,9 @@
 import { useRef, useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import codeforcesIcon from "../assets/icons/codeforces.svg";
+import leetcodeIcon from "../assets/icons/leetcode (1).svg";
+import github from "../assets/icons/github.svg"
 
 // import bg from "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto/v1782811202/aw_fgspka.avif"
 // import profile from "https://res.cloudinary.com/djw0srhou/image/upload/v1782811221/profile2_1_mydhhu.png"
@@ -12,7 +15,7 @@ export default function Home() {
     const container = useRef(null);
     const left = useRef(null);
     const topText = useRef(null);
-    const profileImg = useRef(null);
+    const profileImg = useRef(null);leetcodeIcon
     const button = useRef(null);
     const right = useRef(null);
 
@@ -104,10 +107,41 @@ export default function Home() {
         </div>
 
         {/* Right experience section */}
-        <div ref={right} className="hidden md:flex md:w-60 md:h-40 relative top-25 pl-10 mr-15 flex-col justify-center items-end border-b-8">
+        <div ref={right} className="hidden md:flex md:w-60 md:h-40 relative top-25 pl-10 mr-15 flex-col justify-center items-end ">
           <img className="h-12 w-30 object-cover" src="https://res.cloudinary.com/djw0srhou/image/upload/v1782811277/Pngtree_5_star_rating_game_21024554_pmfx56.png" alt="" />
           <h1 className="text-4xl">3 Years</h1>
           <h1 className="text-2xl"> of exprience</h1>
+          <div className='border-t-8 md:w-60 md:mt-2 pt-5 flex justify-center items-center gap-4'>
+              <a
+                href="https://codeforces.com/profile/Fira12"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Codeforces"
+                className="flex justify-center items-center rounded-full w-10 h-10  border hover:tex"
+              >
+                <img className="w-6 h-6" src={codeforcesIcon} alt="Whats App" />
+              </a>
+
+              <a
+                href="https://leetcode.com/u/Fira_2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="leetcode"
+                className="flex justify-center items-center rounded-full w-10 h-10 border"
+              >
+                <img className="w-6 h-6" src={leetcodeIcon} alt="Whats App" />
+              </a>
+
+              <a
+                href="https://github.com/firaol-12"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Github"
+                className="flex justify-center items-center rounded-full w-10 h-10 border "
+              >
+                <img className="w-6 h-6" src={github} alt="Whats App" />
+              </a>
+          </div>
         </div>
       </div>
     </div>
